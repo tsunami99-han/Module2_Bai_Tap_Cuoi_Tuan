@@ -139,20 +139,18 @@ public class OfficeManager {
         System.out.println("Enter officer");
         String officer = sc.nextLine();
         while (!officer.equals("Worker") && !officer.equals("Staff") && !officer.equals("Engineer")) {
-            System.out.println("Error, re-enter");
+            System.out.println("Error, re-enter officer");
             officer=sc.nextLine();
         }
 
         for (int i = 0; i < officers.size(); i++) {
             if (officer.equals("Worker")) {
-                officers.get(i).toString();
+                System.out.println(officers.get(i).toString());
             } else if (officer.equals("Staff")) {
-                officers.get(i).toString();
+                System.out.println(officers.get(i).toString());
             } else  {
-                officers.get(i).toString();
+                System.out.println(officers.get(i).toString());
             }
-
-
         }
 
     }
